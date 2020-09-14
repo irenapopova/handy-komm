@@ -1,0 +1,15 @@
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  background-color: #00000073 !important;
+}
+
+.checkout-modal {
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  margin: auto;
+  margin-top: 100px;
+  background: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  outline: none;
+}
