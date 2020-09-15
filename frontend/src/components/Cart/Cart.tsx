@@ -122,3 +122,68 @@ render(
   isOpen={this.state.activeModal === 'orderSuccess'}
   setActiveModal={this.setActiveModal}
   />
+
+   <Dialog
+              title="Are you sure that you want to empty your cart?"
+              actions={[
+                <FlatButton
+                  label="Cancel"
+                  primary={true}
+                  onClick={() => this.setActiveModal(null)}
+                />,
+                <FlatButton
+                  label="Yes"
+                  primary={true}
+                  onClick={this.emptyCart}
+                />,
+              ]}
+              modal={true}
+              open={this.state.activeModal === 'dialog'}
+            >
+               All items will be removed.
+            </Dialog>
+
+            </div>
+          <div className="cart-items">
+            {cartExists ?
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Total</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {cart.items.map((item) => {
+                    return (
+                      <tr key={item.product.info.name} >
+                        <td><img src={item.product.info.photo} /></td>
+                        <td><Link to={`/product/${item.product._id}`}>{item.product.info.name}</Link></td>
+                        <td>{numeral(item.product.info.price).format('$0,0.00')}</td>
+                        <td>{item.quantity}</td>
+                        <td>{numeral(item.product.info.price * item.quantity!).format('$0,0.00')}</td>
+                        <td><button title="Remove this item from the cart" onClick={() => this.removeItem(item._id)}>X</button></td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table> :
+              <h1>No items in the cart.</h1>
+            }
+            <Snackbar
+              open={this.state.activeModal === 'snackbar'}
+              message="Item removed from your cart."
+              bodyStyle={{ 'textAlign': 'center' }}
+            />
+          </div>
+        </div>
+      </div>
+    )
+  }
+};
+
+export default Cart;
