@@ -1,3 +1,7 @@
 export const GET_USER = "GET_USER";
 export const GET_USER_SUCCESS = "GET_USER_SUCCESS";
 export const GET_USER_FAIL = "GET_USER_FAIL";
+
+export const INIT_CATALOG = "INIT_CATALOG";
+export const INIT_CATALOG_SUCCESS = "INIT_CATALOG_SUCCESS";
+export const INIT_CATALOG_FAIL = "INIT_CATALOG_FAIL";
