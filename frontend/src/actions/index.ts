@@ -26,3 +26,12 @@ export const getUserFail = createAction(GET_USER_FAIL);
 export const getCart = createAction(GET_CART);
 export const getCartSuccess = createAction(GET_CART_SUCCESS);
 export const getCartFail = createAction(GET_CART_FAIL);
+
+export const getCart = createAction(GET_CART);
+export const getCartSuccess = createAction(GET_CART_SUCCESS);
+export const getCartFail = createAction(GET_CART_FAIL);
+
+export const setFilter = createAction(
+  SET_FILTER,
+  (filterType: filterTypes, filterValue: filterValues) => ({ filterType, filterValue })
+);
