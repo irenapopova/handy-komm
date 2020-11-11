@@ -1,17 +1,38 @@
-.cart-container {
-  min-height: 100vh;
-  margin: 0 6px;
-  margin-top: -72px;
-  border: 1px solid #ffffff00;
-}
-
-.cart-container h1 {
+.login-modal {
+  width: 90%;
+  max-width: 385px;
+  height: 360px;
+  margin: auto;
   margin-top: 100px;
-  margin-bottom: 40px;
+  background: white;
+  color: #2e3a4e;
+  border: 1px solid white;
+  border-radius: 5px;
+  outline: none;
 }
 
-.cart {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.login-modal .form {
+  width: 90%;
+  max-width: 360px;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Roboto';
+}
+
+.login-modal .form h1 {
+  color: #00BCD4;
+}
+
+.login-modal .form .btn {
+  margin: 20px auto;
+}
+
+.login-modal .form p {
+  font-style: italic;
+}
+
+.login-modal .form a {
+  color: #00BCD4;
+  cursor: pointer;
 }
