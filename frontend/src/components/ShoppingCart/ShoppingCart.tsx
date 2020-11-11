@@ -3,10 +3,12 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import Header from "../Header";
 import Account from "../Account";
+import Cart from "../Cart";
 import Homepage from "../Homepage";
 import ProductDetails from "../ProductDetails";
 import Footer from "../Footer";
 import NotFound from "../NotFound";
+import "@styles/ShoppingCart.css";
 
 const ShoppingCart = () => (
   <BrowserRouter>
@@ -25,3 +27,5 @@ const ShoppingCart = () => (
     </MuiThemeProvider>
   </BrowserRouter>
 );
+
+export default ShoppingCart;
