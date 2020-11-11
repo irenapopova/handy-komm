@@ -50,6 +50,16 @@ const RegisterModal = ({
         name="phone"
       />
       <br />
+      <RaisedButton
+        className="btn"
+        label="Submit"
+        primary={true}
+        type="submit"
+      />
+      <p>
+        Already have an account?{" "}
+        <a onClick={() => setActiveModal("login")}>Login here</a>.
+      </p>
     </form>
   </Modal>
 );
