@@ -34,7 +34,7 @@ class FiltersList extends React.Component<Props> {
             nestedItems={[
               <Checkbox
                 className="checkbox"
-                label="< $250"
+                label="< €250"
                 name="priceRange"
                 value="<250"
                 checked={checked.includes("<250")}
@@ -42,7 +42,7 @@ class FiltersList extends React.Component<Props> {
               />,
               <Checkbox
                 className="checkbox"
-                label="$250 - $500"
+                label="€250 - €500"
                 name="priceRange"
                 value="250-500"
                 checked={checked.includes("250-500")}
@@ -50,7 +50,7 @@ class FiltersList extends React.Component<Props> {
               />,
               <Checkbox
                 className="checkbox"
-                label="$500 - $750"
+                label="€500 - €750"
                 name="priceRange"
                 value="500-750"
                 checked={checked.includes("500-750")}
@@ -58,7 +58,7 @@ class FiltersList extends React.Component<Props> {
               />,
               <Checkbox
                 className="checkbox"
-                label="$750 >"
+                label="€750 >"
                 name="priceRange"
                 value="750>"
                 checked={checked.includes("750>")}
