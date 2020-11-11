@@ -64,7 +64,7 @@ const Product = ({ item: { info, _id } }: Props) => {
             <p>
               <b>Price:</b>
             </p>
-            <h2>{numeral(price).format("$0,0.00")}</h2>
+            <h2>{numeral(price).format("€0,0.00")}</h2>
           </div>
           <RaisedButton
             containerElement={<Link to={`/product/${_id}`} />}
