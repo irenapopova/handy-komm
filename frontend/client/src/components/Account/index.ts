@@ -12,3 +12,5 @@ const mapStateToProps = (state: IState) => ({
 const actions = { getUser };
 
 export default compose(connect(mapStateToProps, actions))(Account);
+
+// 

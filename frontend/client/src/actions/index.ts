@@ -1,5 +1,5 @@
-import {createAction} from 'redux-actions';
-import { 
+import { createAction } from "redux-actions";
+import {
   INIT_CATALOG,
   INIT_CATALOG_SUCCESS,
   INIT_CATALOG_FAIL,
@@ -12,8 +12,8 @@ import {
   SET_FILTER,
   CLEAR_FILTERS,
   SET_SORT_BY,
-} from '../constants';
-import {filterTypes, filterValues} from 'typings/filters';
+} from "../constants";
+import { filterTypes, filterValues } from "../typings/filters";
 
 export const initCatalog = createAction(INIT_CATALOG);
 export const initCatalogSuccess = createAction(INIT_CATALOG_SUCCESS);
@@ -27,13 +27,12 @@ export const getCart = createAction(GET_CART);
 export const getCartSuccess = createAction(GET_CART_SUCCESS);
 export const getCartFail = createAction(GET_CART_FAIL);
 
-export const getCart = createAction(GET_CART);
-export const getCartSuccess = createAction(GET_CART_SUCCESS);
-export const getCartFail = createAction(GET_CART_FAIL);
-
 export const setFilter = createAction(
   SET_FILTER,
-  (filterType: filterTypes, filterValue: filterValues) => ({ filterType, filterValue })
+  (filterType: filterTypes, filterValue: filterValues) => ({
+    filterType,
+    filterValue,
+  })
 );
 
 export const clearFilters = createAction(CLEAR_FILTERS);

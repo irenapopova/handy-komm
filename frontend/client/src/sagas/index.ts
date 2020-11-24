@@ -17,7 +17,7 @@ function* getUser() {
   try {
     const user = yield axios.get("/api/user");
 
-    yield put(actions.getUserSucces(user.data));
+    yield put(actions.getUserSuccess(user.data));
   } catch (e) {
     yield put(actions.getUserFail("COULD NOT GET USER"));
   }

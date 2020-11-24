@@ -13,7 +13,7 @@ const LoginModal: React.SFC<ModalProps> = ({
   <Modal
     className="login-modal"
     isOpen={isOpen}
-    onRequestClose={onRequestClose}
+    onRequestClose={()=>onRequestClose}
   >
     <form className="form" action="/auth/login" method="POST">
       <h1>Log In</h1>

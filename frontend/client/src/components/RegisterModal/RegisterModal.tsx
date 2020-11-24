@@ -1,8 +1,8 @@
 import * as React from "react";
 import * as Modal from "react-modal";
-import TextField from "material-ui/";
 import RaisedButton from "material-ui/RaisedButton";
 import { ModalProps } from "@typings/modal";
+import TextField from "material-ui/TextField";
 
 const RegisterModal = ({
   isOpen,
@@ -12,7 +12,7 @@ const RegisterModal = ({
   <Modal
     className="register-modal"
     isOpen={isOpen}
-    onRequestClose={onRequestClose}
+    onRequestClose={() => setActiveModal(null)}
   >
     <form className="form" action="/auth/register" method="POST">
       <h1>Register</h1>

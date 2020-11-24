@@ -2,9 +2,10 @@ import * as React from "react";
 import * as Modal from "react-modal";
 import RaisedButton from "material-ui/RaisedButton";
 import { ModalProps } from "@typings/modal";
-import "@styles/OrderSuccessModal.css";
+import "../../styles/OrderSuccess.css";
 
-const OrderSuccessModal: React.SFC<ModalProps> = ({
+
+const OrderSuccessModal: React.FC<ModalProps> = ({
   isOpen,
   setActiveModal,
 }) => (

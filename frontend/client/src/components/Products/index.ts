@@ -1,8 +1,8 @@
-import { compose } from "compose";
+import { compose } from "redux";
 import { connect } from "react-redux";
 import { initCatalog, clearFilters, setSortBy } from "@actions/index";
 import {
-  isCtalogLoaded,
+  isCatalogLoaded,
   sortProducts,
   filterProducts,
   selectSortBy,
